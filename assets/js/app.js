@@ -158,3 +158,26 @@ backToTopButton.addEventListener('click', e => {
     behavior: 'smooth',
   });
 });
+
+// Tab Switching Functionality
+document.addEventListener('DOMContentLoaded', function () {
+  const tabButtons = document.querySelectorAll('.tab-button');
+  const tabContents = document.querySelectorAll('.tab-content');
+
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Remove active class from all buttons and contents
+      tabButtons.forEach(btn => {
+        btn.classList.remove('active', 'text-green-600', 'border-b-2', 'border-green-600');
+        btn.classList.add('text-gray-600');
+      });
+      tabContents.forEach(content => content.classList.add('hidden'));
+
+      // Add active class to clicked button and corresponding content
+      button.classList.add('active', 'text-green-600', 'border-b-2', 'border-green-600');
+      button.classList.remove('text-gray-600');
+      const tabId = button.getAttribute('data-tab');
+      document.getElementById(`${tabId}-tab`).classList.remove('hidden');
+    });
+  });
+});

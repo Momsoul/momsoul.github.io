@@ -940,271 +940,599 @@
         </div>
         <!-- Product Recommendations -->
         <div class="bg-gray-50 rounded-lg shadow-xl p-8 mb-16">
-          <h3 class="text-2xl font-bold mb-6 text-gray-800 text-center">Baby Care Range</h3>
+          <h3 class="text-2xl font-bold mb-6 text-gray-800 text-center">Explore Our Products</h3>
           <p class="text-gray-600 mb-8 text-center">
-            "Selecting eco-friendly wipes material will help your baby wipes STAND OUT IN A
-            SATURATED MARKET"
+            Discover our range of premium wet wipes designed for different needs and applications
           </p>
-          <div class="overflow-x-auto">
-            <table class="min-w-full bg-white">
-              <thead>
-                <tr>
-                  <th
-                    class="px-6 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                    Product
-                  </th>
-                  <th
-                    class="px-6 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                    Sheet Count
-                  </th>
-                  <th
-                    class="px-6 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                    Size
-                  </th>
-                  <th
-                    class="px-6 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                    Material
-                  </th>
-                  <th
-                    class="px-6 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                    Packaging
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">Baby Basic</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">80 sheets</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">17 x 20 cm</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">
-                    Polyester-Viscose Blend
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">
-                    Flow Pack with Flip-Top Lid
-                  </td>
-                </tr>
-                <tr>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">Baby Premium</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">60 sheets</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">20 x 22 cm</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">100% Viscose</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">
-                    Flow Pack with Rigid Plastic Lid
-                  </td>
-                </tr>
-                <tr>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">Baby Travel</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">20 sheets</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">17 x 20 cm</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">
-                    Soft and Gentle
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">Travel Pack</td>
-                </tr>
-              </tbody>
-            </table>
+
+          <!-- Tabs Navigation -->
+          <div class="flex flex-wrap justify-center mb-8 border-b border-gray-200">
+            <button
+              class="tab-button active px-6 py-3 text-green-600 border-b-2 border-green-600 font-medium"
+              data-tab="baby">
+              Baby Care
+            </button>
+            <button
+              class="tab-button px-6 py-3 text-gray-600 hover:text-green-600 font-medium"
+              data-tab="adult">
+              Adult Care
+            </button>
+            <button
+              class="tab-button px-6 py-3 text-gray-600 hover:text-green-600 font-medium"
+              data-tab="pet">
+              Pet Care
+            </button>
+            <button
+              class="tab-button px-6 py-3 text-gray-600 hover:text-green-600 font-medium"
+              data-tab="facial">
+              Facial Care
+            </button>
+          </div>
+
+          <!-- Tab Content -->
+          <div class="tab-content active" id="baby-tab">
+            <p class="text-gray-600 mb-8 text-center">
+              "Selecting eco-friendly wipes material will help your baby wipes STAND OUT IN A
+              SATURATED MARKET"
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- Baby Basic Card -->
+              <div
+                class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition duration-300">
+                <h4 class="text-xl font-semibold text-gray-800 mb-4">Baby Basic</h4>
+                <div class="space-y-4">
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-layer-group text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Sheet Count</p>
+                      <p class="font-medium">80 sheets</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-ruler text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Size</p>
+                      <p class="font-medium">17 x 20 cm</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-tshirt text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Material</p>
+                      <p class="font-medium">Polyester-Viscose Blend</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-box text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Packaging</p>
+                      <p class="font-medium">Flow Pack with Flip-Top Lid</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Baby Premium Card -->
+              <div
+                class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition duration-300">
+                <h4 class="text-xl font-semibold text-gray-800 mb-4">Baby Premium</h4>
+                <div class="space-y-4">
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-layer-group text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Sheet Count</p>
+                      <p class="font-medium">60 sheets</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-ruler text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Size</p>
+                      <p class="font-medium">20 x 22 cm</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-tshirt text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Material</p>
+                      <p class="font-medium">100% Viscose</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-box text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Packaging</p>
+                      <p class="font-medium">Flow Pack with Rigid Plastic Lid</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Baby Travel Card -->
+              <div
+                class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition duration-300">
+                <h4 class="text-xl font-semibold text-gray-800 mb-4">Baby Travel</h4>
+                <div class="space-y-4">
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-layer-group text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Sheet Count</p>
+                      <p class="font-medium">20 sheets</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-ruler text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Size</p>
+                      <p class="font-medium">17 x 20 cm</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-tshirt text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Material</p>
+                      <p class="font-medium">Soft and Gentle</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-box text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Packaging</p>
+                      <p class="font-medium">Travel Pack</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Adult Care Tab -->
+          <div class="tab-content hidden" id="adult-tab">
+            <p class="text-gray-600 mb-8 text-center">
+              "Our large sized wipes are PERFECTLY SIZED FOR WHOLE BODY CLEANING"
+            </p>
+            <div class="flex flex-wrap gap-6">
+              <!-- Adult Standard Card -->
+              <div
+                class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition duration-300 flex-1 min-w-[300px]">
+                <h4 class="text-xl font-semibold text-gray-800 mb-4">Adult Standard</h4>
+                <div class="space-y-4">
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-layer-group text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Sheet Count</p>
+                      <p class="font-medium">50 sheets</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-ruler text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Size</p>
+                      <p class="font-medium">25 x 30 cm</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-tshirt text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Material</p>
+                      <p class="font-medium">70-30 Polyester-Viscose Blend</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-box text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Packaging</p>
+                      <p class="font-medium">Flow Pack with Rigid Plastic Lid</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Adult SkinDfenz Card -->
+              <div
+                class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition duration-300 flex-1 min-w-[300px]">
+                <h4 class="text-xl font-semibold text-gray-800 mb-4">Adult SkinDfenz</h4>
+                <div class="space-y-4">
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-layer-group text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Sheet Count</p>
+                      <p class="font-medium">40 sheets</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-ruler text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Size</p>
+                      <p class="font-medium">28 x 32 cm</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-tshirt text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Material</p>
+                      <p class="font-medium">100% Viscose</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-box text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Packaging</p>
+                      <p class="font-medium">Flow Pack with Foil Backed Interior</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pet Care Tab -->
+          <div class="tab-content hidden" id="pet-tab">
+            <p class="text-gray-600 mb-8 text-center">
+              "Our gentle formulations are SAFE TO USE EVEN ON SENSITIVE AREAS around the eyes and
+              snout"
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- Pet Basic Card -->
+              <div
+                class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition duration-300">
+                <h4 class="text-xl font-semibold text-gray-800 mb-4">Pet Basic</h4>
+                <div class="space-y-4">
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-layer-group text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Sheet Count</p>
+                      <p class="font-medium">60 sheets</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-ruler text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Size</p>
+                      <p class="font-medium">20 x 20 cm</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-tshirt text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Material</p>
+                      <p class="font-medium">Polyester-Viscose Blend</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-box text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Packaging</p>
+                      <p class="font-medium">Flow Pack with Flip-Top Lid</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pet Premium Card -->
+              <div
+                class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition duration-300">
+                <h4 class="text-xl font-semibold text-gray-800 mb-4">Pet Premium</h4>
+                <div class="space-y-4">
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-layer-group text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Sheet Count</p>
+                      <p class="font-medium">40 sheets</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-ruler text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Size</p>
+                      <p class="font-medium">22 x 22 cm</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-tshirt text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Material</p>
+                      <p class="font-medium">80-20 Polyester-Viscose Blend</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-box text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Packaging</p>
+                      <p class="font-medium">Flow Pack with Rigid Plastic Lid</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pet Travel Card -->
+              <div
+                class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition duration-300">
+                <h4 class="text-xl font-semibold text-gray-800 mb-4">Pet Travel</h4>
+                <div class="space-y-4">
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-layer-group text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Sheet Count</p>
+                      <p class="font-medium">20 sheets</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-ruler text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Size</p>
+                      <p class="font-medium">18 x 18 cm</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-tshirt text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Material</p>
+                      <p class="font-medium">50-50 Polyester-Viscose Blend</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-box text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Packaging</p>
+                      <p class="font-medium">Travel Pack</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Facial Care Tab -->
+          <div class="tab-content hidden" id="facial-tab">
+            <p class="text-gray-600 mb-8 text-center">
+              "Materials like cotton glide smoothly with MINIMAL FRICTION TO PREVENT FACIAL
+              WRINKLES"
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- Facial Standard Card -->
+              <div
+                class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition duration-300">
+                <h4 class="text-xl font-semibold text-gray-800 mb-4">Facial Standard</h4>
+                <div class="space-y-4">
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-layer-group text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Sheet Count</p>
+                      <p class="font-medium">30 sheets</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-ruler text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Size</p>
+                      <p class="font-medium">20 x 20 cm</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-tshirt text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Material</p>
+                      <p class="font-medium">100% Cotton</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-box text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Packaging</p>
+                      <p class="font-medium">Flow Pack with Flip-Top Lid</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Facial Luxury Card -->
+              <div
+                class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition duration-300">
+                <h4 class="text-xl font-semibold text-gray-800 mb-4">Facial Luxury</h4>
+                <div class="space-y-4">
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-layer-group text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Sheet Count</p>
+                      <p class="font-medium">25 sheets</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-ruler text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Size</p>
+                      <p class="font-medium">20 x 20 cm</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-tshirt text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Material</p>
+                      <p class="font-medium">Soy Fiber Blend</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-box text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Packaging</p>
+                      <p class="font-medium">Flow Pack with Rigid Plastic Lid</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Facial Travel Card -->
+              <div
+                class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition duration-300">
+                <h4 class="text-xl font-semibold text-gray-800 mb-4">Facial Travel</h4>
+                <div class="space-y-4">
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-layer-group text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Sheet Count</p>
+                      <p class="font-medium">15 sheets</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-ruler text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Size</p>
+                      <p class="font-medium">18 x 18 cm</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-tshirt text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Material</p>
+                      <p class="font-medium">Bamboo Fiber</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                      <i class="fas fa-box text-green-600"></i>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Packaging</p>
+                      <p class="font-medium">Travel Pack</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- Adult Care Range -->
-        <div class="bg-gray-50 rounded-lg shadow-xl p-8 mb-16">
-          <h3 class="text-2xl font-bold mb-6 text-gray-800 text-center">Adult Care Range</h3>
-          <p class="text-gray-600 mb-8 text-center">
-            "Our large sized wipes are PERFECTLY SIZED FOR WHOLE BODY CLEANING"
-          </p>
-          <div class="overflow-x-auto">
-            <table class="min-w-full bg-white">
-              <thead>
-                <tr>
-                  <th
-                    class="px-6 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                    Product
-                  </th>
-                  <th
-                    class="px-6 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                    Sheet Count
-                  </th>
-                  <th
-                    class="px-6 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                    Size
-                  </th>
-                  <th
-                    class="px-6 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                    Material
-                  </th>
-                  <th
-                    class="px-6 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                    Packaging
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">
-                    Adult Standard
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">50 sheets</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">25 x 30 cm</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">
-                    70-30 Polyester-Viscose Blend
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">
-                    Flow Pack with Rigid Plastic Lid
-                  </td>
-                </tr>
-                <tr>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">
-                    Adult SkinDfenz
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">40 sheets</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">28 x 32 cm</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">100% Viscose</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">
-                    Flow Pack with Foil Backed Interior
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <!-- Pet Care Range -->
-        <div class="bg-gray-50 rounded-lg shadow-xl p-8 mb-16">
-          <h3 class="text-2xl font-bold mb-6 text-gray-800 text-center">Pet Care Range</h3>
-          <p class="text-gray-600 mb-8 text-center">
-            "Our gentle formulations are SAFE TO USE EVEN ON SENSITIVE AREAS around the eyes and
-            snout"
-          </p>
-          <div class="overflow-x-auto">
-            <table class="min-w-full bg-white">
-              <thead>
-                <tr>
-                  <th
-                    class="px-6 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                    Product
-                  </th>
-                  <th
-                    class="px-6 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                    Sheet Count
-                  </th>
-                  <th
-                    class="px-6 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                    Size
-                  </th>
-                  <th
-                    class="px-6 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                    Material
-                  </th>
-                  <th
-                    class="px-6 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                    Packaging
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">Pet Basic</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">60 sheets</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">20 x 20 cm</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">
-                    Polyester-Viscose Blend
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">
-                    Flow Pack with Flip-Top Lid
-                  </td>
-                </tr>
-                <tr>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">Pet Premium</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">40 sheets</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">22 x 22 cm</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">
-                    80-20 Polyester-Viscose Blend
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">
-                    Flow Pack with Rigid Plastic Lid
-                  </td>
-                </tr>
-                <tr>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">Pet Travel</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">20 sheets</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">18 x 18 cm</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">
-                    50-50 Polyester-Viscose Blend
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">Travel Pack</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <!-- Facial Care Range -->
-        <div class="bg-gray-50 rounded-lg shadow-xl p-8 mb-16">
-          <h3 class="text-2xl font-bold mb-6 text-gray-800 text-center">Facial Care Range</h3>
-          <p class="text-gray-600 mb-8 text-center">
-            "Materials like cotton glide smoothly with MINIMAL FRICTION TO PREVENT FACIAL WRINKLES"
-          </p>
-          <div class="overflow-x-auto">
-            <table class="min-w-full bg-white">
-              <thead>
-                <tr>
-                  <th
-                    class="px-6 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                    Product
-                  </th>
-                  <th
-                    class="px-6 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                    Sheet Count
-                  </th>
-                  <th
-                    class="px-6 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                    Size
-                  </th>
-                  <th
-                    class="px-6 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                    Material
-                  </th>
-                  <th
-                    class="px-6 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                    Packaging
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">
-                    Facial Standard
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">30 sheets</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">20 x 20 cm</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">100% Cotton</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">
-                    Flow Pack with Flip-Top Lid
-                  </td>
-                </tr>
-                <tr>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">
-                    Facial Luxury
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">25 sheets</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">20 x 20 cm</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">
-                    Soy Fiber Blend
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">
-                    Flow Pack with Rigid Plastic Lid
-                  </td>
-                </tr>
-                <tr>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">
-                    Facial Travel
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">15 sheets</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">18 x 18 cm</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">Bamboo Fiber</td>
-                  <td class="px-6 py-4 whitespace-nowrap border-b border-gray-200">Travel Pack</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+
         <!-- Packaging and Lid Options -->
         <div class="bg-gray-50 rounded-lg shadow-xl p-8 mb-16">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
