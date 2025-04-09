@@ -308,7 +308,9 @@
         <!-- Material Options -->
         <div class="bg-white rounded-lg shadow-xl p-8 mb-12">
           <h3 class="text-2xl font-bold mb-6 text-gray-800">Available Materials Options</h3>
-          <div class="overflow-x-auto">
+
+          <!-- Desktop Table View -->
+          <div class="hidden md:block overflow-x-auto">
             <table class="min-w-full">
               <thead>
                 <tr>
@@ -372,6 +374,77 @@
                 </tr>
               </tbody>
             </table>
+          </div>
+
+          <!-- Mobile Horizontal Scroll Table View -->
+          <div class="md:hidden">
+            <div class="overflow-x-auto relative">
+              <table class="min-w-full">
+                <thead>
+                  <tr>
+                    <th
+                      class="sticky left-0 z-10 bg-gray-50 px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      Category
+                    </th>
+                    <th
+                      class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      Options
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                  <tr>
+                    <td
+                      class="sticky left-0 z-10 bg-white px-4 py-3 text-sm font-medium text-gray-900">
+                      Cost Friendly
+                    </td>
+                    <td class="px-4 py-3 text-sm text-gray-500">100% polyester</td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="sticky left-0 z-10 bg-white px-4 py-3 text-sm font-medium text-gray-900">
+                      Eco-Friendly
+                    </td>
+                    <td class="px-4 py-3 text-sm text-gray-500">
+                      50-50 Polyester Viscose Blend, 70-30 Polyester Viscose Blend, 80-20 Polyester
+                      Viscose Blend, Viscose
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="sticky left-0 z-10 bg-white px-4 py-3 text-sm font-medium text-gray-900">
+                      Plant Based
+                    </td>
+                    <td class="px-4 py-3 text-sm text-gray-500">Bamboo, Cotton, Soy Fiber</td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="sticky left-0 z-10 bg-white px-4 py-3 text-sm font-medium text-gray-900">
+                      Thickness
+                    </td>
+                    <td class="px-4 py-3 text-sm text-gray-500">40 gsm, 60 gsm, 80 gsm</td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="sticky left-0 z-10 bg-white px-4 py-3 text-sm font-medium text-gray-900">
+                      Directional Strength
+                    </td>
+                    <td class="px-4 py-3 text-sm text-gray-500">
+                      Parallel (2 sides), Cross Lap (4 sides), Semi-Cross Lap
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="sticky left-0 z-10 bg-white px-4 py-3 text-sm font-medium text-gray-900">
+                      Also Available
+                    </td>
+                    <td class="px-4 py-3 text-sm text-gray-500">
+                      TT Line, Glossy Matte, Plastic, Foil Backed
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
         <div class="text-center">
@@ -519,57 +592,57 @@
           </h3>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div class="text-center p-4">
-              <div class="bg-blue-100 rounded-full p-4 inline-block mb-4">
-                <i class="fas fa-industry text-3xl text-blue-600"></i>
+              <div class="bg-green-100 rounded-full p-4 inline-block mb-4">
+                <i class="fas fa-industry text-3xl text-green-600"></i>
               </div>
               <h4 class="text-lg font-semibold">Wet Wipes Machine</h4>
               <p class="text-gray-600 text-sm">Fully Automatic Multi lane wipes machine</p>
             </div>
             <div class="text-center p-4">
-              <div class="bg-blue-100 rounded-full p-4 inline-block mb-4">
-                <i class="fas fa-search text-3xl text-blue-600"></i>
+              <div class="bg-green-100 rounded-full p-4 inline-block mb-4">
+                <i class="fas fa-search text-3xl text-green-600"></i>
               </div>
               <h4 class="text-lg font-semibold">Quality Control</h4>
               <p class="text-gray-600 text-sm">Inspection Machine</p>
             </div>
             <div class="text-center p-4">
-              <div class="bg-blue-100 rounded-full p-4 inline-block mb-4">
-                <i class="fas fa-ban text-3xl text-blue-600"></i>
+              <div class="bg-green-100 rounded-full p-4 inline-block mb-4">
+                <i class="fas fa-ban text-3xl text-green-600"></i>
               </div>
               <h4 class="text-lg font-semibold">In-Line Rejector</h4>
               <p class="text-gray-600 text-sm">Automatic quality control</p>
             </div>
             <div class="text-center p-4">
-              <div class="bg-blue-100 rounded-full p-4 inline-block mb-4">
-                <i class="fas fa-magnet text-3xl text-blue-600"></i>
+              <div class="bg-green-100 rounded-full p-4 inline-block mb-4">
+                <i class="fas fa-magnet text-3xl text-green-600"></i>
               </div>
               <h4 class="text-lg font-semibold">Metal Detector</h4>
               <p class="text-gray-600 text-sm">In-Line Metal Detector Machine</p>
             </div>
             <div class="text-center p-4">
-              <div class="bg-blue-100 rounded-full p-4 inline-block mb-4">
-                <i class="fas fa-weight text-3xl text-blue-600"></i>
+              <div class="bg-green-100 rounded-full p-4 inline-block mb-4">
+                <i class="fas fa-weight text-3xl text-green-600"></i>
               </div>
               <h4 class="text-lg font-semibold">Weighing Machine</h4>
               <p class="text-gray-600 text-sm">In-Line Automatic Weighing Machine</p>
             </div>
             <div class="text-center p-4">
-              <div class="bg-blue-100 rounded-full p-4 inline-block mb-4">
-                <i class="fas fa-ruler text-3xl text-blue-600"></i>
+              <div class="bg-green-100 rounded-full p-4 inline-block mb-4">
+                <i class="fas fa-ruler text-3xl text-green-600"></i>
               </div>
               <h4 class="text-lg font-semibold">GSM Machine</h4>
               <p class="text-gray-600 text-sm">For material thickness control</p>
             </div>
             <div class="text-center p-4">
-              <div class="bg-blue-100 rounded-full p-4 inline-block mb-4">
-                <i class="fas fa-robot text-3xl text-blue-600"></i>
+              <div class="bg-green-100 rounded-full p-4 inline-block mb-4">
+                <i class="fas fa-robot text-3xl text-green-600"></i>
               </div>
               <h4 class="text-lg font-semibold">ROBOTIC ARM</h4>
               <p class="text-gray-600 text-sm">Fully Automatic lid applicator</p>
             </div>
             <div class="text-center p-4">
-              <div class="bg-blue-100 rounded-full p-4 inline-block mb-4">
-                <i class="fas fa-box text-3xl text-blue-600"></i>
+              <div class="bg-green-100 rounded-full p-4 inline-block mb-4">
+                <i class="fas fa-box text-3xl text-green-600"></i>
               </div>
               <h4 class="text-lg font-semibold">Packaging Machine</h4>
               <p class="text-gray-600 text-sm">
